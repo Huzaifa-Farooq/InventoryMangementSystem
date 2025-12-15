@@ -18,6 +18,7 @@ namespace InventoryManagementSystem.Models
             this.QuantityInBill = QuantityInBill;
         }
 
+
         public override string ToString()
         {
             return $"(id={Id}, name='{Name}', quantityInBill={QuantityInBill}, price/unit={Price}, total={QuantityInBill * Price})";
