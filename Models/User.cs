@@ -19,7 +19,7 @@ namespace WinFormsApp1.Models
             Role = role;
             Permissions = new List<string>();
 
-            // assigning permissions (mirrors Java switch)
+            // assigning permissions
             switch (role)
             {
                 case Roles.Administrator:
@@ -32,19 +32,8 @@ namespace WinFormsApp1.Models
                     Permissions.Add(PermissionsConstants.CanViewStock);
                     break;
                 default:
-                    // no permissions by default
                     break;
             }
-        }
-
-        public bool HasPermission(string permission)
-        {
-            return Permissions.Contains(permission);
-        }
-
-        public bool IsAdmin()
-        {
-            return string.Equals(Role, Roles.Administrator, StringComparison.Ordinal);
         }
 
         public override string ToString()

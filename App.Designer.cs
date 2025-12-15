@@ -29,33 +29,55 @@
         private void InitializeComponent()
         {
             ButtonsPanel = new Panel();
+            deleteItemBtn = new Button();
+            addItemBtn = new Button();
             delAccBtn = new Button();
             createAccBtn = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             MainContent = new Panel();
-            addItemBtn = new Button();
             ButtonsPanel.SuspendLayout();
             SuspendLayout();
             // 
             // ButtonsPanel
             // 
+            ButtonsPanel.Controls.Add(deleteItemBtn);
             ButtonsPanel.Controls.Add(addItemBtn);
             ButtonsPanel.Controls.Add(delAccBtn);
             ButtonsPanel.Controls.Add(createAccBtn);
             ButtonsPanel.Controls.Add(button3);
             ButtonsPanel.Controls.Add(button2);
             ButtonsPanel.Controls.Add(button1);
-            ButtonsPanel.Location = new Point(98, 6);
+            ButtonsPanel.Location = new Point(57, 6);
             ButtonsPanel.Name = "ButtonsPanel";
-            ButtonsPanel.Size = new Size(843, 43);
+            ButtonsPanel.Size = new Size(960, 43);
             ButtonsPanel.TabIndex = 0;
             ButtonsPanel.Paint += ButtonsPanel_Paint;
             // 
+            // deleteItemBtn
+            // 
+            deleteItemBtn.Location = new Point(382, 3);
+            deleteItemBtn.Name = "deleteItemBtn";
+            deleteItemBtn.Size = new Size(112, 34);
+            deleteItemBtn.TabIndex = 6;
+            deleteItemBtn.Text = "Delete Item";
+            deleteItemBtn.UseVisualStyleBackColor = true;
+            deleteItemBtn.Click += deleteItemBtn_Click;
+            // 
+            // addItemBtn
+            // 
+            addItemBtn.Location = new Point(249, 3);
+            addItemBtn.Name = "addItemBtn";
+            addItemBtn.Size = new Size(127, 34);
+            addItemBtn.TabIndex = 5;
+            addItemBtn.Text = "Add Item";
+            addItemBtn.UseVisualStyleBackColor = true;
+            addItemBtn.Click += button4_Click;
+            // 
             // delAccBtn
             // 
-            delAccBtn.Location = new Point(537, 3);
+            delAccBtn.Location = new Point(658, 3);
             delAccBtn.Name = "delAccBtn";
             delAccBtn.Size = new Size(149, 34);
             delAccBtn.TabIndex = 4;
@@ -65,7 +87,7 @@
             // 
             // createAccBtn
             // 
-            createAccBtn.Location = new Point(382, 3);
+            createAccBtn.Location = new Point(500, 3);
             createAccBtn.Name = "createAccBtn";
             createAccBtn.Size = new Size(149, 34);
             createAccBtn.TabIndex = 3;
@@ -75,7 +97,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(692, 3);
+            button3.Location = new Point(813, 3);
             button3.Name = "button3";
             button3.Size = new Size(112, 34);
             button3.TabIndex = 2;
@@ -110,16 +132,6 @@
             MainContent.Size = new Size(1115, 696);
             MainContent.TabIndex = 1;
             // 
-            // addItemBtn
-            // 
-            addItemBtn.Location = new Point(249, 3);
-            addItemBtn.Name = "addItemBtn";
-            addItemBtn.Size = new Size(127, 34);
-            addItemBtn.TabIndex = 5;
-            addItemBtn.Text = "Add Item";
-            addItemBtn.UseVisualStyleBackColor = true;
-            addItemBtn.Click += button4_Click;
-            // 
             // App
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -128,7 +140,7 @@
             Controls.Add(MainContent);
             Controls.Add(ButtonsPanel);
             Name = "App";
-            Text = "App";
+            Text = "Inventory Mangement System";
             Load += App_Load;
             ButtonsPanel.ResumeLayout(false);
             ResumeLayout(false);
@@ -144,5 +156,6 @@
         private Button delAccBtn;
         private Button createAccBtn;
         private Button addItemBtn;
+        private Button deleteItemBtn;
     }
 }

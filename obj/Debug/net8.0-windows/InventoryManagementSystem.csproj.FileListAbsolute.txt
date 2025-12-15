@@ -29,3 +29,4 @@ C:\Users\Huzaifa Farooq\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-
 C:\Users\Huzaifa Farooq\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\InventoryManagementSystem.Controls.CreateAccountControl.resources
 C:\Users\Huzaifa Farooq\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\InventoryManagementSystem.Controls.DeleteAccountControl.resources
 C:\Users\Huzaifa Farooq\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\InventoryManagementSystem.sourcelink.json
+C:\Users\Huzaifa Farooq\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\InventoryManagementSystem.Controls.DeleteItemControl.resources

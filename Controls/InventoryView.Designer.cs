@@ -40,7 +40,7 @@
             dataGridView1.Location = new Point(17, 70);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(988, 395);
+            dataGridView1.Size = new Size(1146, 402);
             dataGridView1.TabIndex = 7;
             // 
             // label1
@@ -68,7 +68,7 @@
             Controls.Add(searchtextBox);
             Controls.Add(dataGridView1);
             Name = "InventoryView";
-            Size = new Size(1020, 502);
+            Size = new Size(1180, 485);
             Load += InventoryView_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

@@ -103,7 +103,7 @@
             groupBox2.Controls.Add(dataGridView1);
             groupBox2.Location = new Point(364, 13);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(769, 415);
+            groupBox2.Size = new Size(911, 413);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
@@ -114,7 +114,7 @@
             dataGridView1.Location = new Point(6, 33);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(728, 376);
+            dataGridView1.Size = new Size(899, 376);
             dataGridView1.TabIndex = 0;
             // 
             // GenerateBillButton
@@ -212,7 +212,7 @@
             Controls.Add(groupBox1);
             Controls.Add(GenerateBillButton);
             Name = "SaleControl";
-            Size = new Size(1206, 615);
+            Size = new Size(1291, 615);
             Load += SaleControl_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

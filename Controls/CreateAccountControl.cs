@@ -43,6 +43,19 @@ namespace InventoryManagementSystem.Controls
             {
                 MessageBox.Show(
                     "Please enter a username, password, and select a role.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (
+                username.Length < 6 ||
+                password.Length < 6
+                )
+            {
+                MessageBox.Show(
+                    "Username and Password must contain at least 6 characters",
                     "Validation Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);

@@ -51,6 +51,7 @@ namespace WinFormsApp1
                 {
                     createAccBtn.Enabled = false;
                     delAccBtn.Enabled = false;
+                    addItemBtn.Enabled = false;
                 }
             }
             MainContent.Controls.Clear();
@@ -106,6 +107,11 @@ namespace WinFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             LoadControl(new AddItemControl(db));
+        }
+
+        private void deleteItemBtn_Click(object sender, EventArgs e)
+        {
+            LoadControl(new DeleteItemControl(db));
         }
     }
 }

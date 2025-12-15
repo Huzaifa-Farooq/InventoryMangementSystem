@@ -13,6 +13,9 @@
     <Compile Update="Controls\DeleteAccountControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Controls\DeleteItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Controls\InventoryView.cs">
       <SubType>UserControl</SubType>
     </Compile>

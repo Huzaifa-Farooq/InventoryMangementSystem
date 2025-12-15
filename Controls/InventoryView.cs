@@ -15,7 +15,6 @@ namespace WinFormsApp1
     {
         private Database db;
         private List<Item> itemsList;
-        private List<Item> FilteredList;
         public InventoryView(Database db)
         {
             this.db = db;

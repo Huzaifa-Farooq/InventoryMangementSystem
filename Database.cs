@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 
 using WinFormsApp1.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WinFormsApp1
 {
@@ -134,6 +135,14 @@ namespace WinFormsApp1
             }
             reader.Close();
             return null;
+        }
+
+        public void DeleteItem(int id)
+        {
+            string query = "DELETE FROM items WHERE id = @id";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
         }
 
         public void DeleteUser(string username)

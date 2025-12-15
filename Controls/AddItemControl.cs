@@ -29,9 +29,9 @@ namespace InventoryManagementSystem.Controls
             int quantity = (int)numericUpDownQuantity.Value;
             double price = (double)numericUpDownPrice.Value;
 
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(name) || price <= 0 || quantity <= 0)
             {
-                MessageBox.Show("Please enter the item name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter item name, price and quantity.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
