@@ -102,5 +102,10 @@ namespace WinFormsApp1
         {
             LoadControl(new DeleteAccountControl(db, CurrentUser));
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadControl(new AddItemControl(db));
+        }
     }
 }

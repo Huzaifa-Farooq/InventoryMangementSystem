@@ -35,25 +35,27 @@
             button2 = new Button();
             button1 = new Button();
             MainContent = new Panel();
+            addItemBtn = new Button();
             ButtonsPanel.SuspendLayout();
             SuspendLayout();
             // 
             // ButtonsPanel
             // 
+            ButtonsPanel.Controls.Add(addItemBtn);
             ButtonsPanel.Controls.Add(delAccBtn);
             ButtonsPanel.Controls.Add(createAccBtn);
             ButtonsPanel.Controls.Add(button3);
             ButtonsPanel.Controls.Add(button2);
             ButtonsPanel.Controls.Add(button1);
-            ButtonsPanel.Location = new Point(262, 6);
+            ButtonsPanel.Location = new Point(98, 6);
             ButtonsPanel.Name = "ButtonsPanel";
-            ButtonsPanel.Size = new Size(679, 43);
+            ButtonsPanel.Size = new Size(843, 43);
             ButtonsPanel.TabIndex = 0;
             ButtonsPanel.Paint += ButtonsPanel_Paint;
             // 
             // delAccBtn
             // 
-            delAccBtn.Location = new Point(403, 6);
+            delAccBtn.Location = new Point(537, 3);
             delAccBtn.Name = "delAccBtn";
             delAccBtn.Size = new Size(149, 34);
             delAccBtn.TabIndex = 4;
@@ -63,7 +65,7 @@
             // 
             // createAccBtn
             // 
-            createAccBtn.Location = new Point(248, 6);
+            createAccBtn.Location = new Point(382, 3);
             createAccBtn.Name = "createAccBtn";
             createAccBtn.Size = new Size(149, 34);
             createAccBtn.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(558, 6);
+            button3.Location = new Point(692, 3);
             button3.Name = "button3";
             button3.Size = new Size(112, 34);
             button3.TabIndex = 2;
@@ -83,7 +85,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(130, 6);
+            button2.Location = new Point(131, 3);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 1;
@@ -93,7 +95,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 6);
+            button1.Location = new Point(13, 3);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 0;
@@ -107,6 +109,16 @@
             MainContent.Name = "MainContent";
             MainContent.Size = new Size(1115, 696);
             MainContent.TabIndex = 1;
+            // 
+            // addItemBtn
+            // 
+            addItemBtn.Location = new Point(249, 3);
+            addItemBtn.Name = "addItemBtn";
+            addItemBtn.Size = new Size(127, 34);
+            addItemBtn.TabIndex = 5;
+            addItemBtn.Text = "Add Item";
+            addItemBtn.UseVisualStyleBackColor = true;
+            addItemBtn.Click += button4_Click;
             // 
             // App
             // 
@@ -131,5 +143,6 @@
         private Button button1;
         private Button delAccBtn;
         private Button createAccBtn;
+        private Button addItemBtn;
     }
 }
